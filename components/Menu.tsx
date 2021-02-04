@@ -8,7 +8,7 @@ export const Menu = () => (
         <a className='px-3 lg:px-6 pl-0 lg:pl-0'>Início</a>
       </Link>
       <Link href='/'>
-        <a className='px-3 pr-0 lg:px-6' href='/Lucas Nascimento - Curriculo.pdf'>
+        <a className='px-3 pr-0 lg:px-6' target='_blank' href='/Lucas Nascimento - Curriculo.pdf'>
           Currículo
         </a>
       </Link>

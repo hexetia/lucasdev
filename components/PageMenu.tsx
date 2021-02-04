@@ -1,7 +1,10 @@
 import Link from 'next/link'
-import { ThemeChanger } from './ThemeChanger'
 
-export const Menu = () => (
+import dynamic from 'next/dynamic'
+
+const ThemeChangerDynamic = dynamic(() => import('./ThemeChanger'), { ssr: false })
+
+export const PageMenu = () => (
   <div className='flex justify-between pt-3 md:pt-6'>
     <nav className='flex text-xl'>
       <Link href='/'>
@@ -24,6 +27,6 @@ export const Menu = () => (
       {/*</Link>*/}
     </nav>
 
-    <ThemeChanger />
+    <ThemeChangerDynamic />
   </div>
 )

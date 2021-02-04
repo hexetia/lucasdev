@@ -31,8 +31,8 @@ export default function Home() {
             <>
               <div className='text-base'>
                 <p>
-                  Em produção desde 2017, arquitetei e criei o App e API para cadastro, validação e entrega de carteirinhas para gráficas de
-                  dezenas de milhares de estudantes por ano em Pernambuco.
+                  Em produção desde 2017, arquitetei e desenvolvi o App e API para cadastro, validação e entrega de carteirinhas para
+                  impressão em gráficas de dezenas de milhares de estudantes por ano em Pernambuco.
                 </p>
                 <p>
                   Meu objetivo principal foi prover uma aplicação flexível para que novas entidades estudantis, com outros formatos e
@@ -61,8 +61,8 @@ export default function Home() {
               <div className='text-base'>
                 <p>WebApp nascido para digitalizar e acelerar o acesso a dados de membros do movimento.</p>
                 <p>
-                  Para segurança da ocupação e várias atividades, como reuniões dos membros e planejamento eram ativides custosas, pois eram
-                  feitas buscas em fichas de registro de papel.
+                  Várias atividades, como, reuniões dos membros, checagem da lista de ocupantes e planejamento eram ativides custosas, pois
+                  eram feitas buscas em fichas de registro de papel.
                 </p>
               </div>
               <div className='flex py-4'>
@@ -77,9 +77,10 @@ export default function Home() {
         <Project
           name='Telzir'
           img='/telzirWeb.png'
-          href='/telzir'
+          href='https://telzirx.netlify.app'
           link='https://telzirx.netlify.app'
           githubLink='https://github.com/morhogg/telzir'
+          externalHref
           description={
             <>
               <div className='text-base'>
@@ -98,6 +99,7 @@ export default function Home() {
           img='/react-fitty.png'
           href='https://github.com/morhogg/react-fitty'
           link='https://github.com/morhogg/react-fitty'
+          externalHref
           description={
             <>
               <div className='text-base'>
@@ -114,6 +116,7 @@ export default function Home() {
         <Project
           name='useClientRouter para Next.js'
           img='/use-client-router.png'
+          externalHref
           href='https://github.com/morhogg/use-client-router'
           description={
             <>

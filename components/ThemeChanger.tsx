@@ -9,7 +9,7 @@ export const ThemeChanger = (): JSX.Element => {
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
 
-  if (!mounted) return <div className={styles.switch} /> // skeleton on server
+  // if (!mounted) return <div className={styles.switch} /> // skeleton on server
 
   return (
     <label htmlFor='themeCheckbox' className={styles.switch}>

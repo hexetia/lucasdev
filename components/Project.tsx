@@ -9,14 +9,15 @@ interface ProjectProps {
   description: React.ReactNode
   link?: string
   githubLink?: string
+  externalHref?: boolean
   img: string
 }
 
-function ConditionalLink({ href, children }: { href?: string; children: React.ReactNode }) {
+function ConditionalLink({ href, externalHref, children }: { href?: string; externalHref?: boolean; children: React.ReactNode }) {
   if (href) {
     return (
       <Link href={href}>
-        <a>{children}</a>
+        <a target={externalHref ? '_blank' : '_self'}>{children}</a>
       </Link>
     )
   } else {
@@ -24,10 +25,10 @@ function ConditionalLink({ href, children }: { href?: string; children: React.Re
   }
 }
 
-export const Project = ({ name, description, img, link, href, githubLink }: ProjectProps) => (
+export const Project = ({ name, description, img, link, href, githubLink, externalHref }: ProjectProps) => (
   <div className='w-full'>
     <h2 className='text-2xl font-bold'>{name}</h2>
-    <ConditionalLink href={href}>
+    <ConditionalLink href={href} externalHref={externalHref}>
       <div className='text-center'>
         <Image src={img} width={456} height={257} objectFit='cover' quality='90' />
       </div>

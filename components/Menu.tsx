@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ThemeChanger } from './ThemeChanger'
 
 export const Menu = () => (
-  <div className='flex justify-between'>
+  <div className='flex justify-between pt-3 md:pt-6'>
     <nav className='flex text-xl'>
       <Link href='/'>
         <a className='px-3 lg:px-6 pl-0 lg:pl-0'>Início</a>

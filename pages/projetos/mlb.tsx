@@ -19,7 +19,7 @@ export default function MLBPage() {
           <p>
             Desenvolvi para o{' '}
             <a href='https://www.mlbbrasil.org/' target='_blank'>
-              Movimento de Luta nos Bairros, Vilas e Favelas - MLB
+              <i>Movimento de Luta nos Bairros, Vilas e Favelas - MLB</i>
             </a>{' '}
             um App SPA para digitalizar as fichas de cadastro dos ocupantes.
           </p>
@@ -31,6 +31,11 @@ export default function MLBPage() {
             executado em cada rota para que o SSR possa funcionar, já no Firebase Hosting não há nenhum servidor, só o hosting de arquivos
             estáticos.
           </p>
+          <p>
+            O caminho sugerido via exemplos e artigos de Firebase + Next.js envolviam ter uma Firebase Function responsável por todas as
+            requisições, o que acabaria por ser algo deveras custoso, pois renderizar uma página SSR seria segundo meus cálculos na época
+            proibitivo. Não segui por esse caminho, pois me pareceu ser possível encontrar outra solução.
+          </p>
           <br />
           <div className='text-center'>
             <Image src='/mlb4k.png' width={736} height={736} quality='95' />
@@ -38,14 +43,14 @@ export default function MLBPage() {
           <br />
 
           <p>
-            O que eu aprendi é que há uma forte acoplação do Router e Servidor no Next.js, tanto que parece proposital para forçar o uso do
-            SSR, não me pareceu uma limitação técnica ou tecnolígica e muitas das issues que encontrei sobre o assunto não tinham respostas
-            esclarecedoras da Vercel, até encontrei um artigo com o título{' '}
+            Após me aprofundar um pouco sobre como o Next.js funciona internamente, o que eu aprendi é que há uma forte acoplação do Router
+            e Servidor no Next.js, tanto que parece proposital para forçar o uso do SSR, não me pareceu uma limitação técnica e muitas das
+            issues que encontrei sobre o assunto não tinham respostas esclarecedoras da Vercel, até encontrei um artigo com o título{' '}
             <StyledLink href='https://colinhacks.com/essays/vercel-nextjs-spa' target='_blank'>
               "Vercel, Next.js, and the war on SPAs"
             </StyledLink>{' '}
             de um cara que passou por problemas parecidos e notou que a Vercel parece estar travando uma guerra nas sombras contra os SPA's
-            para favorecer sua própria plataforma, com a qual eles fazem o verdadeiro dinheiro. Esse dificuldade em lidar com o acoplamento
+            para favorecer sua própria plataforma, com a qual eles fazem o verdadeiro dinheiro. Essa dificuldade em lidar com o acoplamento
             me fez escrever uma{' '}
             <a href='https://www.npmjs.com/package/use-client-router' target='_blank'>
               Hook de código aberto que melhora o Router no Client-side.

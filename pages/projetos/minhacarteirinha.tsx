@@ -27,7 +27,7 @@ export default function MinhaCarteirinhaPage() {
 
         <p>
           Um dos grandes desafios no desenvolvimento do software foi arquitetar uma estrutura genérica de impressão na estrutura da entidade
-          e entrega entrega para as gráficas nas cidades em que a impressão era terceirizada. Nas cidades em que a própria entidade fazia a
+          e entrega para as gráficas nas cidades em que a impressão era terceirizada. Nas cidades em que a própria entidade fazia a
           impressão havia ainda diversos tipos de máquinas usadas, umas que imprimiam com cartões com o layout da carteirinha pré-impresso,
           outras que imprimiam em cartões em branco, e até impressoras com hardware modificado.
         </p>
@@ -38,10 +38,10 @@ export default function MinhaCarteirinhaPage() {
         <br />
 
         <p>
-          Após o primeiro ano em produção a UEP verificou que em algumas universidades onde fazia carteirinha presencialmente era necessário
-          acesso Offline-first devido a pontos das universidades que não cobertos por wifi. Esse não foi um problema fácil de resolver, pois
-          a necessidade de flexibilidade no sistema de impressão tornava impossível tornar o WebApp offline-first (por limitações na
-          plataforma web).
+          Após o primeiro ano em produção a UEP verificou que em algumas universidades onde fazia-se carteirinha presencialmente era
+          necessário acesso Offline-first devido a pontos das universidades que não cobertos por wifi. Esse não foi um problema fácil de
+          resolver, pois, a necessidade de flexibilidade no sistema de impressão impossibilitava tornar o WebApp offline-first (e também por
+          limitações na plataforma web).
         </p>
 
         <br />
@@ -60,7 +60,7 @@ export default function MinhaCarteirinhaPage() {
 
         <br />
 
-        <p>O Front-End do site e do App de Desktop foi escrito em React.js</p>
+        <p>O Front-End do site e do Desktop foi escrito em React.js, compartilhando vários componentes.</p>
 
         <br />
 
@@ -74,12 +74,6 @@ export default function MinhaCarteirinhaPage() {
           <li>Node.js</li>
           <li>Mysql</li>
         </ul>
-
-        <p>Construído co</p>
-
-        <br />
-
-        <p>Aplicação desktop offline first (explicar os desafios que necessitaram ser app electron e não um webapp)</p>
       </main>
     </Page>
   )

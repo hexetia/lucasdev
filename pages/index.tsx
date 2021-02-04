@@ -31,10 +31,13 @@ export default function Home() {
             <>
               <div className='text-base'>
                 <p>
-                  Em produção desde 2017, Arquitetei e criei o App para cadastro, validação e entrega de dados para gráficas de dezenas de
-                  milhares de carteiras de estudante por ano em Pernambuco.
+                  Em produção desde 2017, arquitetei e criei o App e API para cadastro, validação e entrega de carteirinhas para gráficas de
+                  dezenas de milhares de estudantes por ano em Pernambuco.
                 </p>
-                <p>Meu objetivo foi prover uma aplicação flexível</p>
+                <p>
+                  Meu objetivo principal foi prover uma aplicação flexível para que novas entidades estudantis, com outros formatos e
+                  requisitos pudessem ser adicionadas posteriormente, sem comprometer a segurança e performance.
+                </p>
               </div>
               <div className='flex py-4'>
                 <span className='px-3 py-1 pl-0'>Kotlin</span>

@@ -64,9 +64,12 @@ export default function Home() {
                   Várias atividades, como, reuniões dos membros, checagem da lista de ocupantes e planejamento eram ativides custosas, pois
                   eram feitas buscas em fichas de registro de papel.
                 </p>
+                <p>Foi o meu primeiro projeto a usar Continuous Devlivery & Continuous Deployment usando Github Actions.</p>
               </div>
               <div className='flex py-4'>
-                <span className='px-3 py-1 pl-0'>Firebase</span>
+                <span className='px-3 py-1 pl-0'>CI</span>
+                <span className='px-3 py-1'>CD</span>
+                <span className='px-3 py-1'>Firebase</span>
                 <span className='px-3 py-1'>Next.js</span>
                 <span className='px-3 py-1 pr-0'>React-Query</span>
               </div>

@@ -121,6 +121,7 @@ export default function Home() {
           img='/use-client-router.png'
           externalHref
           href='https://github.com/morhogg/use-client-router'
+          link='https://github.com/morhogg/use-client-router'
           description={
             <>
               <div className='text-base'>

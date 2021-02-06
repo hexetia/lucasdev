@@ -23,6 +23,11 @@ export default function MLBPage() {
             </a>{' '}
             um App SPA para digitalizar as fichas de cadastro dos ocupantes.
           </p>
+          <p>
+            Aproveitei que o projeto foi algo sem fins lucrativos, para estudar e implementar Continous Development e Continuous Deployment.
+            Usei o Github Actions para fazer vários testes de Unidade e Integração e ao passar, fazer o deploy de uma nova versão do Backend
+            e do Frontend do App.
+          </p>
           <br />
           <p>Next.js no Firebase Hosting - O problema</p>
           <br />

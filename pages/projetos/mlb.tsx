@@ -1,7 +1,6 @@
 import { Page } from '../../components/Page'
 import Image from 'next/image'
 import React from 'react'
-import { StyledLink } from '../../components/StyledLink'
 
 export default function MLBPage() {
   return (
@@ -18,7 +17,11 @@ export default function MLBPage() {
         <main className='text'>
           <p>
             Desenvolvi para o{' '}
-            <a href='https://www.mlbbrasil.org/' target='_blank'>
+            <a
+              className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600 inline-flex text-sm no-underline'
+              href='https://www.mlbbrasil.org/'
+              target='_blank'
+            >
               <i>Movimento de Luta nos Bairros, Vilas e Favelas - MLB</i>
             </a>{' '}
             um App SPA para digitalizar as fichas de cadastro dos ocupantes.
@@ -33,13 +36,13 @@ export default function MLBPage() {
           <br />
           <p>
             O Firebase Hosting funciona de forma muito diferente da solução da Vercel, na Vercel por padrão você tem Servidor Next.js sendo
-            executado em cada rota para que o SSR possa funcionar, já no Firebase Hosting não há nenhum servidor, só o hosting de arquivos
-            estáticos.
+            executado, para que cada rota para que precise de SSR possa funcionar, já no Firebase Hosting não há nenhum servidor, existe
+            apenas o hosting de arquivos estáticos.
           </p>
           <p>
-            O caminho sugerido via exemplos e artigos de Firebase + Next.js envolviam ter uma Firebase Function responsável por todas as
-            requisições, o que acabaria por ser algo deveras custoso, pois renderizar uma página SSR seria segundo meus cálculos na época
-            proibitivo. Não segui por esse caminho, pois me pareceu ser possível encontrar outra solução.
+            O caminho sugerido via exemplos e artigos de Firebase + Next.js envolviam ter uma <i>Firebase Function</i> responsável por todas
+            as requisições, o que acabaria por ser algo deveras custoso, pois renderizar uma página SSR seria proibitivo financeiramente.
+            Não segui por esse caminho, pois me pareceu ser possível encontrar outra solução.
           </p>
           <br />
           <div className='text-center'>
@@ -48,17 +51,16 @@ export default function MLBPage() {
           <br />
 
           <p>
-            Após me aprofundar um pouco sobre como o Next.js funciona internamente, o que eu aprendi é que há uma forte acoplação do Router
-            e Servidor no Next.js, tanto que parece proposital para forçar o uso do SSR, não me pareceu uma limitação técnica e muitas das
-            issues que encontrei sobre o assunto não tinham respostas esclarecedoras da Vercel, até encontrei um artigo com o título{' '}
-            <StyledLink href='https://colinhacks.com/essays/vercel-nextjs-spa' target='_blank'>
-              "Vercel, Next.js, and the war on SPAs"
-            </StyledLink>{' '}
-            de um cara que passou por problemas parecidos e notou que a Vercel parece estar travando uma guerra nas sombras contra os SPA's
-            para favorecer sua própria plataforma, com a qual eles fazem o verdadeiro dinheiro. Essa dificuldade em lidar com o acoplamento
-            me fez escrever uma{' '}
-            <a href='https://www.npmjs.com/package/use-client-router' target='_blank'>
-              Hook de código aberto que melhora o Router no Client-side.
+            Desenvolvi uma solução que possibilitou que o app fosse integralmente enviado ao Firebase Hosting, consegui mapear dinamicamente
+            as rotas do Next.js após o build, e transformar os arquivos de rotas gerados pelo manifest do Next.js (algo que me pareceu ter
+            um contrato de design estável) em rewrites do Firebase Hosting, é um pequno script, que assume que o site não usará rotas SSR ou
+            ISR, o{' '}
+            <a
+              className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600 inline-flex text-sm no-underline'
+              target='_blank'
+              href='https://github.com/morhogg/mlbadmin/blob/main/scripts/useNextRewritesInFirebase.js'
+            >
+              script pode visto aqui.
             </a>
           </p>
           <br />
@@ -71,7 +73,13 @@ export default function MLBPage() {
             <li>Material-UI</li>
             <li>Mobx</li>
             <li>
-              <a href='https://github.com/morhogg/use-client-router'>useClientRouter</a>
+              <a
+                className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600 inline-flex text-sm no-underline'
+                target='_blank'
+                href='https://github.com/morhogg/use-client-router'
+              >
+                useClientRouter
+              </a>
             </li>
           </ul>
         </main>

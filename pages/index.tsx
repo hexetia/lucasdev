@@ -54,7 +54,7 @@ export default function Home() {
           name='MLB Admin'
           href='/projetos/mlb'
           link='https://mlbadmin.web.app'
-          githubLink='https://github.com/morhogg/mlbadmin'
+          githubLink='https://github.com/hexetia/mlbadmin'
           img='/mlb.png'
           description={
             <>
@@ -82,7 +82,7 @@ export default function Home() {
           img='/telzirWeb.png'
           href='https://telzirx.netlify.app'
           link='https://telzirx.netlify.app'
-          githubLink='https://github.com/morhogg/telzir'
+          githubLink='https://github.com/hexetia/telzir'
           externalHref
           description={
             <>
@@ -100,8 +100,8 @@ export default function Home() {
         <Project
           name='React-Fitty'
           img='/react-fitty.png'
-          href='https://github.com/morhogg/react-fitty'
-          link='https://github.com/morhogg/react-fitty'
+          href='https://github.com/hexetia/react-fitty'
+          link='https://github.com/hexetia/react-fitty'
           externalHref
           description={
             <>
@@ -120,8 +120,8 @@ export default function Home() {
           name='useClientRouter para Next.js'
           img='/use-client-router.png'
           externalHref
-          href='https://github.com/morhogg/use-client-router'
-          link='https://github.com/morhogg/use-client-router'
+          href='https://github.com/hexetia/use-client-router'
+          link='https://github.com/hexetia/use-client-router'
           description={
             <>
               <div className='text-base'>

@@ -58,7 +58,7 @@ export default function MLBPage() {
             <a
               className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600 inline-flex text-sm no-underline'
               target='_blank'
-              href='https://github.com/morhogg/mlbadmin/blob/main/scripts/useNextRewritesInFirebase.js'
+              href='https://github.com/hexetia/mlbadmin/blob/main/scripts/useNextRewritesInFirebase.js'
             >
               script pode visto aqui.
             </a>
@@ -76,7 +76,7 @@ export default function MLBPage() {
               <a
                 className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600 inline-flex text-sm no-underline'
                 target='_blank'
-                href='https://github.com/morhogg/use-client-router'
+                href='https://github.com/hexetia/use-client-router'
               >
                 useClientRouter
               </a>

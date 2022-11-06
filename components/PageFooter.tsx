@@ -7,9 +7,6 @@ export function PageFooter() {
       <a className='p-2' href='https://www.linkedin.com/in/lucasdev7/' target='_blank'>
         Linkedin
       </a>
-      <a className='p-2' href='https://twitter.com/saculbr' target='_blank'>
-        Twitter
-      </a>
     </footer>
   )
 }

@@ -7,12 +7,12 @@ export default function Home() {
   return (
     <Page>
       <Head>
-        <title>Lucas Nascimento - Fullstack Developer</title>
+        <title>Lucas Nascimento - Software Developer</title>
       </Head>
       <div className='pt-24 pb-16 lg:pb-24'>
         <h1 className='text-5xl font-bold'>Olá, meu nome é Lucas.</h1>
         <p className='text-base'>
-          Sou um desenvolvedor fullstack apaixonado por tecnologia e música, trabalho com tecnologias web desde 2014.
+          Sou um desenvolvedor de software apaixonado por tecnologia e música, trabalho com tecnologias web desde 2014.
         </p>
         <p>
           Gosto bastante do feeling de resolver problemas da vida real com tecnologia e tenho desenvoltura pra buscar soluções pra qualquer
